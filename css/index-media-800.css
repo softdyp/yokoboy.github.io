@@ -1,0 +1,16 @@
+@media (max-width: 600px) {
+    #nav .items {
+        display: block;
+        padding: 0px;
+    }
+
+    #nav .items .item {
+        display: block;
+        padding: 0px;
+    }
+
+    #nav .items .item a {
+        display: block;
+
+    }
+}
