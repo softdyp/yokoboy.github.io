@@ -8,9 +8,9 @@
 
 body {
     background-image: url("../images/water.jpg");
-    background-position: center -100px;
-    background-repeat: no-repeat;
-    background-size: 1700px;
+    background-position: center -150px;
+    --background-repeat: no-repeat;
+    --background-size: 1700px;
 }
 
 #nav {
