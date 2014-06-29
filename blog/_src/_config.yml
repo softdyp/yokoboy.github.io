@@ -1,0 +1,5 @@
+baseurl: /blog
+
+paginate: 10
+
+permalink: pretty
