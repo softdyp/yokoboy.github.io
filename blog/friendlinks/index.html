@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link href="/blog/assets/css/common.css" rel="stylesheet" type="text/css"/>
+	<script>document.createElement("nav");</script>
+	<title>yokoboy 友情链接</title>
+    <link href="/blog/assets/css/friendlinks.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<nav id="nav">
+    <ul class="items container">
+        <li id="logo" class="item"><a href="/" target="_blank"><img src="/blog/assets/images/logonm.png" alt="logo"></a></li>
+        <li id="head"><a href="###"><img src="/blog/assets/images/lianmeng.png" alt="logo"></a></li>
+        <li class="item"><a href="/blog">首页</a></li>
+		<li class="item"><a href="/blog/friendlinks">友情链接</a></li>
+    </ul>
+</nav>
+
+<div id="links" class="container clearfix">
+
+    <div class="link clearfix">
+        <div class="friend-head" style="">
+            <img src="/blog/assets/friendlinks/com.dullong.jpg">
+        </div>
+        <div class="friend-info">
+            <p class="frined-link"><a href="http://www.dullong.com/" target="_blank">啪啪列表</a></p>
+
+            <p class="intro">龙哥:专注于爬虫原创分享.</p>
+        </div>
+    </div>
+
+
+    <div class="link odd">
+        <div class="friend-head" style="">
+            <img src="/blog/assets/friendlinks/com.3niukou.jpg">
+        </div>
+        <div class="friend-info">
+            <p class="frined-link"><a href="http://3niukou.com/" target="_blank">3纽扣</a></p>
+
+            <p class="intro">潇姐</p>
+        </div>
+    </div>
+
+    <div class="link">
+        <div class="friend-head" style="">
+            <img src="/blog/assets/friendlinks/com.kyyblabla.jpg">
+        </div>
+        <div class="friend-info">
+            <p class="frined-link"><a href="http://www.cnblogs.com/kyyblabla" target="_blank">巴拉巴拉</a></p>
+
+            <p class="intro">岩岩</p>
+        </div>
+    </div>
+
+    <div class="link odd">
+        <div class="friend-head" style="">
+            <img src="/blog/assets/friendlinks/com.sixangel.jpg">
+        </div>
+        <div class="friend-info">
+            <p class="frined-link"><a href="http://sixangel.com/" target="_blank">softdyp</a></p>
+
+            <p class="intro">小董</p>
+        </div>
+    </div>
+
+</div>
+
+<footer id="footer">
+    CopyRight &copy; 2014 &nbsp;&nbsp;design by yokoboy
+</footer>
+</body>
+<script>
+    (function () {
+        var navElement = document.getElementById("nav");
+        window.onscroll = function () {
+            document.body.style.backgroundPosition = 'center ' + (document.body.scrollTop | document.documentElement.scrollTop) / (document.body.scrollHeight) * 100 + "%";
+            navElement.style.top = "-" + (document.body.scrollTop | document.documentElement.scrollTop) / (document.body.scrollHeight) * 50 + "%"
+        }
+
+        if (window.innerWidth <= 800) {
+            document.getElementById("head").addEventListener("click", function () {
+                var leftVar = navElement.style.left;
+                if (leftVar != "0px") {
+                    navElement.style.left = "0px";
+                } else {
+                    navElement.style.left = "-280px";
+                }
+            });
+            window.onscroll = null;
+        }
+    })();
+
+</script>
+ 
+</head>
