@@ -1,28 +1,17 @@
 ---
-layout: default
-title: 我的Blog
+layout: posts
+title: yokoboy's blog
 ---
 
-<h2>{{ page.title }}</h2>
-
-<p>最新文章</p>
-
-<ul>
-
-{% for post in site.posts %}
-
-<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-
+<div id="posts" class="container">
+{% for post in paginator.posts %}
+ <div class="post">
+  {% if post.contentimg %}
+    <img class="container postimg" src="{{ site.contentImgPath }}{{ post.contentimg }}" alt="文章内容图">
+  {% endif %}
+  <h1 class="posttitle"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <h4 class="postabstract">{{ post.content  || split:'<!--break-->' | first }}  </h4>
+  <p class="label"><span>{{ post.date | date:"%Y-%m-%d" }}</span></p>
+ </div>
 {% endfor %}
-
-</ul>
-
-<h4>Category</h4>
-<ul>
-
-    {% for category in site.categories %}
-    <li><a href="{{ site.baseurl }}/categories/{{ category | first }}/" title="view all
-posts">{{ category | first }} {{ category | last | size }}</a>
-    </li>
-    {% endfor %}
-</ul>
+</div>
