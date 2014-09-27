@@ -1,16 +1,52 @@
-<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="com.yokoboy.common.guestbook" data-title="公共留言板" data-url="http://yokoboy.com/guestbook"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"yokoboy"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>yokoboy 留言板 </title>
+    <style type="text/css">
+        body {
+            background: #eee;
+            margin: 5% 10%;
+            border: 1px solid #eee;
+
+            border-radius: 3px;
+            box-shadow: 0px 0px 15px rgba(200, 200, 200, .2);
+        }
+
+        #container {
+            padding: 8%;
+            background: #fff;
+        }
+
+        @media (max-width: 800px) {
+            body {
+                margin: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="com.yokoboy.common.guestbook" data-title="公共留言板"
+         data-url="http://yokoboy.com/guestbook"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+        var duoshuoQuery = {short_name: "yokoboy"};
+        (function () {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';
+            ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0]
+                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+</body>
+</html>
