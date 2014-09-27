@@ -11,6 +11,9 @@
     <link href="css/index-media-800.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<div id="loading">
+    <img src="images/loading.gif" alt="loading..."/>
+</div>
 <div id="nav">
     <ul class="items">
         <li class="item"><a href="http://blog.yokoboy.com" target="_blank">博客</a></li>
@@ -28,6 +31,7 @@
         img.src = 'images/wallpaper/' + parseInt(Math.random() * 10) + '.jpg';
         img.onload = function () {
             document.body.style.backgroundImage = 'url("' + img.src + '")';
+            document.getElementById("loading").style.display = "none";
         }
     }, 0)
 </script>

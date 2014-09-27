@@ -8,8 +8,22 @@
 
 body {
     background-position: center 0px;
-	background-size:100%;
-	background-color:#000;
+    background-size: 100%;
+    background-color: #000;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #ffffff;
+}
+
+#loading img {
+    display: block;
+    margin: 6% auto;
 }
 
 #nav {
