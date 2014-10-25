@@ -1,7 +1,0 @@
-
-/friendlinks/
-/
-/tags/
-/sitemap.txt
-
-/2014/07/11/post-template/
